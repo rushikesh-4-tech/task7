@@ -1,76 +1,19 @@
-/* Base styles for desktop */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 20px;
+  background-color: #f0f0f0;
 }
 
-header {
-  background-color: #2b2b2b;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
+#user-container {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-.container {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-}
-
-.column {
-  width: 45%;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-footer {
-  background-color: #2b2b2b;
-  color: white;
-  text-align: center;
-  padding: 10px;
+  flex-direction: column;
+  gap: 15px;
   margin-top: 20px;
 }
 
-/* ✅ Responsive styles for screens smaller than 768px */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .container {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .column {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  body {
-    font-size: 14px;
-    overflow-x: hidden;
-  }
-
-  header, footer {
-    padding: 15px;
-  }
+.user-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
