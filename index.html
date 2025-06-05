@@ -1,37 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fetch User Data</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>My Responsive Website</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <h1>User Information</h1>
+  <button onclick="fetchUsers()">Reload Users</button>
+  <div id="user-container"></div>
 
-  <main class="container">
-    <section class="column">
-      <h2>Welcome</h2>
-      <p>This is a sample paragraph. It shows how content will appear on both desktop and mobile.</p>
-    </section>
-    <section class="column">
-      <h2>Image</h2>
-      <img src="A1.jpg" alt="Sample Image">
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 My Website</p>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
